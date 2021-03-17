@@ -1,8 +1,10 @@
 FROM python:slim
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
+
+WORKDIR /myapp
 
 CMD [ "python" ]
