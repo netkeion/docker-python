@@ -1,5 +1,7 @@
 FROM python:slim
 
+RUN apt-get update && apt-get -y install --no-install-recommends openssh-client && rm -rf /var/lib/apt/lists/* 
+
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
