@@ -3,3 +3,4 @@ pysqlite3
 requests
 Flask
 paho-mqtt
+smspdudecoder
